@@ -7,15 +7,9 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <title>Raul Gallegos | Portfolio</title>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init('Cjd4D_g2cXDfh45dU');
-        })();
-  </script>
+
 </head>
 <body>
     <div class="container mt-5">
@@ -24,13 +18,14 @@
         
         <div class="mb-3">
             <div class="h4">About Me</div>
+            <img class="img-thumbnail float-left m-1 mr-2" src="https://ds-bucket-aws.s3.amazonaws.com/296e66726e392b0f.png">
             <p>Hi there! I am a self-taught software engineer. Prior to transitioning into tech, I worked as a physical therapist in the healthcare industry.</p>
             <p>While I enjoyed helping patients improve their mobility and overall quality of life, I became interested in the ways in which technology could further enhance the healthcare industry. I began teaching myself software development on my free time and eventually made the decision to pursue a career in tech.</p>
             <p>One of the things that drew me to software engineering is the ability to continuously learn and grow. In my previous role as a physical therapist, I developed strong communication and problem-solving skills, which have translated well to my current career in tech. I believe that soft skills, such as the ability to work well in a team and adapt to new challenges, are just as important as technical skills in this field.</p>
         </div>
         <div><a href="https://github.com/raw0ol"><i class="devicon-github-original h4 colored"></i> View My GitHub</a></div>
         <div class="mt-2">
-            <div><a href="#" download class="btn btn-primary">Download Resume</a></div>
+            <div><a href="Resume.pdf" download class="btn btn-primary">Download Resume</a></div>
         </div>
 
         <div class="container text-center">
@@ -122,14 +117,13 @@
             </div>
         </div>
 
-        <!-- <div class="container mt-5">
+        <div class="container mt-5">
             <div class="mb-3">
                 <div class="mb-3 h4">Contact Me</div>
-                <form id="contact-form">
-                    <input type="hidden" name="contact_number">
+                <form action="https://formspree.io/f/xzbqpdja" method="POST">
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" name="user_name" class="form-control" id="name" placeholder="Enter your name">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Enter your name">
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
@@ -142,7 +136,7 @@
                     <input type="submit" value="Send" class="btn btn-primary">
                 </form>
             </div>
-        </div> -->
+        </div>
     </div>
 
     <footer class="bg-light py-5 mt-5">
@@ -154,27 +148,10 @@
         </div>
     </footer>
     <!-- Optional JavaScript -->
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
-    
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.16.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 </body>
 </html>
        
